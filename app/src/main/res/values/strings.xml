@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">resto</string>
+    <string name="what_s_on_your_mind">Enter votre message</string>
+    <string name="menu_refresh">Refresh</string>
 </resources>

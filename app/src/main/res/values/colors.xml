@@ -9,4 +9,6 @@
     <color name="black">#000000</color>
     <color name="fbcolor">#4267B2</color>
     <color name="googlecolor">#C3463b</color>
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
 </resources>
