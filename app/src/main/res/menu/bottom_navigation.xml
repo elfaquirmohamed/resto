@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="Restaurant"/>
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="Recommandation"/>
+    <item
+        android:id="@+id/nav_Account"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"
+        android:title="Profile"/>
+
+</menu>

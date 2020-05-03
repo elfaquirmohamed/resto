@@ -114,7 +114,7 @@ public class ChatBot extends AppCompatActivity {
         this.initialRequest = true;
 
 
-        int permission = ContextCompat.checkSelfPermission(this,
+      /*  int permission = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.RECORD_AUDIO);
 
         if (permission != PackageManager.PERMISSION_GRANTED) {
@@ -140,7 +140,7 @@ public class ChatBot extends AppCompatActivity {
 
             }
         }));
-
+*/
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +150,7 @@ public class ChatBot extends AppCompatActivity {
             }
         });
 
-        btnRecord.setOnClickListener(new View.OnClickListener() {
+    btnRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 recordMessage();
