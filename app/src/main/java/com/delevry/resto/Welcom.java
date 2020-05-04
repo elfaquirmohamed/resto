@@ -14,9 +14,9 @@ public class Welcom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcom);
 
-        Button btn1 =findViewById(R.id.btn_chatbot);
+     //   Button btn1 =findViewById(R.id.btn_chatbot);
         Button btn2 =findViewById(R.id.welcome_show_restaurants_btn);
-
+/*
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class Welcom extends AppCompatActivity {
             }
         });
 
-
+*/
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

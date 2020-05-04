@@ -1,5 +1,5 @@
 package com.delevry.resto;
-
+/*
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -114,7 +114,7 @@ public class ChatBot extends AppCompatActivity {
         this.initialRequest = true;
 
 
-      /*  int permission = ContextCompat.checkSelfPermission(this,
+     int permission = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.RECORD_AUDIO);
 
         if (permission != PackageManager.PERMISSION_GRANTED) {
@@ -140,7 +140,7 @@ public class ChatBot extends AppCompatActivity {
 
             }
         }));
-*/
+
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -356,11 +356,7 @@ public class ChatBot extends AppCompatActivity {
         }
     }
 
-    /**
-     * Check Internet Connection
-     *
-     * @return
-     */
+
     private boolean checkInternetConnection() {
         // get Connectivity Manager object to check connection
         ConnectivityManager cm =
@@ -459,5 +455,4 @@ public class ChatBot extends AppCompatActivity {
 }
 
 
-
-
+*/

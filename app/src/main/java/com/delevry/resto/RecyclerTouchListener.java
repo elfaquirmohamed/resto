@@ -1,5 +1,5 @@
 package com.delevry.resto;
-
+/*
 import android.content.Context;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -50,3 +50,5 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 
     }
 }
+
+ */
