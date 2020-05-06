@@ -17,9 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MyAdapter extends RecyclerView.Adapter<FoodViewHolder>{
 
     private Context myContext;
-    private List<FoodData> myFoodList;
+    private List<MenuData> myFoodList;
 
-    public MyAdapter(Context myContext, List<FoodData> myFoodList) {
+    public MyAdapter(Context myContext, List<MenuData> myFoodList) {
         this.myContext = myContext;
         this.myFoodList = myFoodList;
     }
@@ -34,7 +34,7 @@ public class MyAdapter extends RecyclerView.Adapter<FoodViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull final FoodViewHolder foodViewHolder, int i) {
- foodViewHolder.imageView.setImageResource(myFoodList.get(i).getItemImage());
+ //foodViewHolder.imageView.setImageResource(myFoodList.get(i).getItemImage());
  foodViewHolder.mTitle.setText(myFoodList.get(i).getItemName());
         foodViewHolder.mDescription.setText(myFoodList.get(i).getItemDescription());
         foodViewHolder.mPrice.setText(myFoodList.get(i).getItemPrice());
@@ -44,7 +44,10 @@ public class MyAdapter extends RecyclerView.Adapter<FoodViewHolder>{
             public void onClick(View view) {
 
                 Intent intent=new Intent(myContext,DetailActivity.class);
-                intent.putExtra("image",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemImage());
+                intent.putExtra
+
+
+                        ("image",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemImage());
                 intent.putExtra("Description",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemDescription());
                 myContext.startActivity(intent);
 
@@ -76,3 +79,4 @@ class FoodViewHolder extends RecyclerView.ViewHolder{
 
     }
 }
+

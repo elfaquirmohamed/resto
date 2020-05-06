@@ -4,6 +4,7 @@
     package="com.delevry.resto">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -13,9 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".Upload_Recipe"/>
+        <activity android:name=".DetailResto" />
+        <activity android:name=".DetailActivity" />
         <activity android:name=".Welcom" />
-        <activity android:name=".ChatBot" />
         <activity android:name=".sign_in" />
         <activity android:name=".Sign_up" />
         <activity

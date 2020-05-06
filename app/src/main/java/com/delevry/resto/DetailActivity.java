@@ -7,26 +7,25 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 public class DetailActivity extends AppCompatActivity {
 
-
-    TextView foodDescription;
-    ImageView foodImage;
-
+ TextView foodDescription;
+ ImageView foodImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        foodDescription=findViewById(R.id.txtDescription);
-        foodImage=findViewById(R.id.ivImage2);
+foodDescription=findViewById(R.id.txtDescription);
+foodImage=findViewById(R.id.ivImage2);
+Bundle mBundle= getIntent().getExtras();
+if(mBundle!=null){
+foodDescription.setText(mBundle.getString("Description"));
+foodImage.setImageResource(mBundle.getInt("image"));
+}
 
 
-        Bundle mBundle=getIntent().getExtras();
-        if(mBundle!=null){
 
-            foodDescription.setText(mBundle.getString("Description"));
-            foodImage.setImageResource(mBundle.getInt("image"));
-        }
     }
 }
